@@ -1,0 +1,31 @@
+{
+  "env": {
+    "required": [
+      "LINEAR_API_KEY"
+    ]
+  },
+  "project": {
+    "name": "chess-3d-7"
+  },
+  "github": {
+    "repo": "welovekiteboarding/chess-3d-7"
+  },
+  "linear": {
+    "team_key": "C37",
+    "team_name": "Chess3d7",
+    "workflow_states": [
+      "Todo",
+      "In Progress",
+      "Finalizing",
+      "Human Review",
+      "Rework",
+      "Merging",
+      "Done"
+    ]
+  },
+  "proof_issue": {
+    "state": "Todo",
+    "description": "Add a new file at docs/live-proof-setup-run-merge.md. Record only facts you can directly observe while working in this issue workspace. Use this exact structure:\n\n# Live Proof Setup Run Merge\n- Proof issue: <issue identifier>\n- Branch: <current git branch>\n- Commit evidence: <the current issue-specific git commit SHA and subject from local git history>\n- File evidence: <state that this proof artifact file was created for the deterministic live-proof issue>\n- Current scope: <state only what this issue actually proves at authoring time>\n\nRules:\n- Before writing the proof note, inspect the local git history for the current issue branch and record the issue-specific commit SHA and subject that already exist there.\n- Use only facts visible in the issue prompt, workspace files, current branch name, or local git history.\n- Do not claim a PR, review result, merge result, or Linear workflow state unless that fact is already visible from local git data in the workspace.\n- Do not say evidence is missing if local git history already shows it.",
+    "title": "Create deterministic live-proof artifact"
+  }
+}
